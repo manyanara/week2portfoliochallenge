@@ -1,0 +1,122 @@
+
+:root {
+    /* --headerColor: rgba(255, 195, 244, 0.25); */
+    --borderColor: rgb(235, 225, 255);
+    --fontColor: rgb(39, 36, 72);
+    --fontAccent: ;
+    --gradientStart:rgb(211, 242, 255);
+    --gradientStop:rgba(236, 187, 255, 0.437); 
+
+    
+}
+* {
+    background-color:rgb(246, 216, 236);
+    color: var(--fontColor);
+    margin:0;
+    padding:0;
+    font-family: "Rubick", sans-serif;
+}
+aside{
+    display:flex;
+}
+
+aside h1{
+    padding: 75px;
+    text-align:end;
+}
+header{
+    position: relative;
+    left:15%;
+    max-width:85%; 
+    max-height: 200px;
+}
+h1 {
+    font-size: 65px;
+}
+main{
+    position: relative;
+    left:15%;
+    max-width:85%; 
+    display: block;
+}
+article{
+    height: 100%;
+    max-height: 600px;
+    width:100%;
+    padding:5px;
+    background-image: linear-gradient(to bottom right, var(--gradientStart), var(--gradientStop));
+    display: inline-block;
+}
+img{    
+    max-width: auto;
+    max-height: 600px;
+    border-radius: 10%;
+    border: 10px;
+    border-style: solid;
+    border-color: var(--borderColor);
+}
+/* article a:nth-child(odd){
+    display: flex;
+    background-color: green;
+} */
+
+#traditionalMedia img{
+    position:relative;
+    right:0px;
+}
+h2 {
+    font-size: 1.5rem;
+    background-color: var(--headerColor);
+    margin:auto;
+    display: block;
+}
+.Resource .Description{
+    display: none;
+}
+.Resource:hover .Description {
+    display: block;
+    position: absolute;
+    left:500px;
+} 
+
+.moveMe {
+    position: relative;
+    bottom: 285px;
+    right:500px;
+}
+
+a p{
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(46, 32, 32, 0);
+}
+
+nav {
+    position:fixed;
+    display: block;
+    width: 15%;
+    height:100%;
+    top:0;
+    left:0;
+    line-height: 30px;
+    font-size: 1.5em;
+    background-image: linear-gradient(to top,rgb(246, 216, 236) , var(--gradientStart));
+
+}
+
+nav ul{
+    position: fixed;
+    bottom:0;
+    list-style: none;
+    text-orientation:sideways-right;
+}  
+
+nav:hover, img:hover{
+    box-shadow: 0px 0px 10px 10px rgb(128, 255, 230);
+}
+
+@media screen (max-width: 750px) {
+    body {
+        display: flex;
+    }
+}
